@@ -24,7 +24,7 @@ accessToken = "Bearer <token>"
 # 3. Prepare GetParameters to get the latest message for messages API.
 
 # Defines a variable that will hold the roomId 
-roomIdToGetMessages = "<!!!REPLACEME with roomID of the NPA2023 Webex Teams room!!!>" 
+roomIdToGetMessages = "<roomid>" 
 
 while True:
     # always add 1 second of delay to the loop to not go over a rate limit of API calls
