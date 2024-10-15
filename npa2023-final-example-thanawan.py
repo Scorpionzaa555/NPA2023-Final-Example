@@ -82,7 +82,7 @@ while True:
         openweatherGeoAPIGetParameters = {
             "q": location,
             "limit": 1,
-            "appid": "<!!!REPLACEME with your Openweather API Key!!!>",
+            "appid": "<appid>",
         }
 
 #######################################################################################       
