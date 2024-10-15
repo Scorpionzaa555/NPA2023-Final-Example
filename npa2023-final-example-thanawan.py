@@ -126,8 +126,10 @@ while True:
 
 #######################################################################################
 # 10. Complete the code to get weather description and weather temperature
-        weather_desc = json_data_weather["<!!!REPLACEME!!!> with path to weather description key!!!>"]
-        weather_temp = json_data_weather["<!!!REPLACEME!!!> with path to weather temperature key!!!>"]
+        weather_desc = json_data_weather["weather"][0]["description"]
+        weather_temp = json_data_weather["main"]["temp"]
+        print(weather_desc)
+        print(weather_temp)
 
 #######################################################################################
 # 11. Complete the code to format the response message.
