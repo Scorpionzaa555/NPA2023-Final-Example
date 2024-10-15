@@ -107,7 +107,11 @@ while True:
 # 8. Prepare openweatherAPIGetParameters for OpenWeather API, https://openweathermap.org/api; current weather data for one location by geographic coordinates.
         # Use current weather data for one location by geographic coordinates API service in Openweathermap
         openweatherAPIGetParameters = {
-                                "<!!!REPLACEME!!!> with all key:value pairs of parameters!!!>"
+                                "q": location,
+                                "limit": 1,
+                                "lat": locationLat,
+                                "lon": locationLng,
+                                "appid": "appid"
                             }
 
 #######################################################################################
