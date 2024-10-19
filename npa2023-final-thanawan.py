@@ -1,7 +1,7 @@
 #######################################################################################
-# FirstName/Surname:
-# Student ID:
-# Github repository URL: 
+# FirstName/Surname: Thanawan Chaemsathian
+# Student ID: 65070099
+# Github repository URL: https://github.com/Scorpionzaa555/NPA2023-Final-Example.git
 #######################################################################################
 # Instruction
 # Reads README.md in https://github.com/chotipat/NPA2023-Final-Example for more information.
