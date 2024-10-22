@@ -18,7 +18,7 @@ import json
 # 2. Assign the Webex hard-coded access token to the variable accessToken.
 
 
-accessToken = "Bearer <!!!REPLACEME with hard-coded token!!!>" 
+accessToken = "Bearer NDdkZjczMDUtMjg1Yy00NWRlLTg3ZjYtYTY5YWQ1ZGE5NDIzZGY2NzZkMGYtMDVi_P0A1_2f0ec6fd-9694-4631-8bc4-8302c4fc4019" 
 
 #######################################################################################
 # 3. Prepare GetParameters to get the latest message for messages API.
