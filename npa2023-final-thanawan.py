@@ -117,7 +117,7 @@ while True:
 
 #######################################################################################
 # 9. Provide the URL to the OpenWeather API; current weather data for one location.
-        rw = requests.get("<!!!REPLACEME with URL!!!>", 
+        rw = requests.get("https://api.openweathermap.org/data/2.5/weather", #Add
                              params = openweatherAPIGetParameters
                         )
         json_data_weather = rw.json()
