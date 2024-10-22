@@ -89,7 +89,7 @@ while True:
 #######################################################################################       
 # 6. Provide the URL to the OpenWeather Geocoding address API.
         # Get location information using the OpenWeather Geocoding API geocode service using the HTTP GET method
-        r = requests.get("<!!!REPLACEME with URL!!!>", 
+        r = requests.get("http://api.openweathermap.org/geo/1.0/direct", #Add
                              params = openweatherGeoAPIGetParameters
                         )
         # Verify if the returned JSON data from the OpenWeather Geocoding API service are OK
