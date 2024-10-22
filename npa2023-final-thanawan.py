@@ -10,21 +10,21 @@
 #######################################################################################
 # 1. Import libraries for API requests, JSON formatting, and time.
 
-import time
-import requests
-import json
+import time #Add
+import requests #Add
+import json #Add
 
 #######################################################################################
 # 2. Assign the Webex hard-coded access token to the variable accessToken.
 
 
-accessToken = "Bearer NDdkZjczMDUtMjg1Yy00NWRlLTg3ZjYtYTY5YWQ1ZGE5NDIzZGY2NzZkMGYtMDVi_P0A1_2f0ec6fd-9694-4631-8bc4-8302c4fc4019" 
+accessToken = "Bearer NDdkZjczMDUtMjg1Yy00NWRlLTg3ZjYtYTY5YWQ1ZGE5NDIzZGY2NzZkMGYtMDVi_P0A1_2f0ec6fd-9694-4631-8bc4-8302c4fc4019" #Add
 
 #######################################################################################
 # 3. Prepare GetParameters to get the latest message for messages API.
 
 # Defines a variable that will hold the roomId 
-roomIdToGetMessages = "Y2lzY29zcGFyazovL3VzL1JPT00vNTFmNTJiMjAtNWQwYi0xMWVmLWE5YTAtNzlkNTQ0ZjRkNGZi" 
+roomIdToGetMessages = "Y2lzY29zcGFyazovL3VzL1JPT00vNTFmNTJiMjAtNWQwYi0xMWVmLWE5YTAtNzlkNTQ0ZjRkNGZi" #Add
 
 while True:
     # always add 1 second of delay to the loop to not go over a rate limit of API calls
@@ -43,7 +43,7 @@ while True:
     # Send a GET request to the Webex Teams messages API.
     # - Use the GetParameters to get only the latest message.
     # - Store the message in the "r" variable.
-    r = requests.get("<!!!REPLACEME with URL!!!>",
+    r = requests.get("https://webexapis.com/v1/messages", #Add
                          params = GetParameters, 
                          headers = {"Authorization": accessToken}
                     )
@@ -65,11 +65,13 @@ while True:
     
     # check if the text of the message starts with the magic character "/" and yourname followed by a location name
     # e.g.  "/chotipat San Jose"
-    if message.find("<!!!REPLACEME!!!>") == 0:
+    if message.find("/thanawan") == 0: #Add
         # extract name of a location (city) where we check for GPS coordinates using the OpenWeather Geocoding API
         # Enter code below to hold city name in location variable.
         # For example location should be "San Jose" if the message is "/chotipat San Jose".
-        location = "<!!!REPLACEME!!!>" 
+        extract = message.split(" ",1) #Add
+        location = extract[1] #Add
+        print("Location: " + location) #Add
 
 #######################################################################################     
 # 5. Prepare openweather Geocoding APIGetParameters..
